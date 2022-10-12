@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+a.active,
+a:focus,
+button:focus,
+button.active {
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a,
+button {
+  text-decoration: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn:focus {
+  box-shadow: none;
 }
 
-.App-link {
-  color: #61dafb;
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  box-shadow: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-family: "Axiforma";
+}
+
+a,
+button {
+  transition: all ease-in-out 0.5s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  border-style: none;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.main {
+  height: calc(100vh - 264px);
 }
