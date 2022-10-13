@@ -1,15 +1,25 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">BoilerPlate</Navbar.Brand>
+        <Navbar.Brand to="/">BoilerPlate</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/features">Features</Nav.Link>
-          <Nav.Link href="/aboutus">About Us</Nav.Link>
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+          <Link to="/features" className="nav-link">
+            Features
+          </Link>
+          <Link to="/aboutus" className="nav-link">
+            About Us
+          </Link>
+          <Link to="/login" className="nav-link">
+            Log In
+          </Link>
         </Nav>
       </Container>
     </Navbar>
