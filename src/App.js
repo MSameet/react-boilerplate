@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "./App.css";
 
-import Footer from "./components/Footer";
+import Footer from "./components/Base/Footer";
 import Header from "./components/Base/Header";
 import { BrowserRouter as Router } from "react-router-dom";
 

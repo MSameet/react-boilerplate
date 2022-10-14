@@ -1,10 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { AboutUs } from "../views/AboutUs";
-import { Features } from "../components/Features";
-import { Home } from "../components/Home";
-import { LogIn } from "../components/LogIn";
+import { LogIn, Home, Features, AboutUs } from "../views";
 import { ProtectedRoutes } from "./ProtectedRoutes";
 
 export function AppRoutes() {
